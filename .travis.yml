@@ -6,4 +6,9 @@ python:
 install:
   - pip install -r requirements.txt
 
- 
+before_script:
+  - python manage.py migrate
+
+script:
+  - black --check .
+  - flake8 .
