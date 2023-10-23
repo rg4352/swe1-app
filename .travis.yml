@@ -22,9 +22,9 @@ script:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "$AWSKEYID"
+    secure: $AWSKEYID
   secret_access_key:
-    secure: "$AWSSECRETKEY"
+    secure: $AWSSECRETKEY
   region: "us-west-2"
   app: "django-tutorial"
   env: "django-env"
