@@ -25,7 +25,7 @@ script:
     secure: "$AWSKEYID"
     secret_access_key:
     secure: "$AWSSECRETKEY"
-    region: "us-east-1"
-    app: "example-app-name"
-    env: "example-app-environment"
+    region: "us-west-2"
+    app: "django-tutorial"
+    env: "django-env"
     bucket_name: "the-target-S3-bucket"
