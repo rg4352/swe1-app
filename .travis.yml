@@ -5,10 +5,15 @@ python:
   - 3.8
 install:
   - pip install -r requirements.txt
+  - curl -L https://coveralls.io/coveralls-linux.tar.gz
 
 before_script:
   - python manage.py migrate
 
+
 script:
   - black --check .
   - flake8 . --max-line-length=100
+  - coverage run manage.py test
+  - coverage xml
+  - ./coverall/coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
