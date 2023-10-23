@@ -25,7 +25,7 @@ SECRET_KEY = "o5muv^0vkwwq(*=av4l(hs55a@4$_i&s$xu57iotg=@+f)-h5!"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-pskgwwbz.us-west-2.elasticbeanstalk.com',"127.0.0.1",'*']
+ALLOWED_HOSTS = ['django-env.eba-pskgwwbz.us-west-2.elasticbeanstalk.com', "127.0.0.1", '*']
 
 
 # Application definition
@@ -87,11 +87,11 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator", 
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",}, 
+    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",}, 
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",}, 
 ]
 
 
