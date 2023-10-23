@@ -5,6 +5,7 @@ python:
   - 3.9
 install:
   - pip install -r requirements.txt
+  - pip install urllib3==1.26.7
   - curl -L https://coveralls.io/coveralls-linux.tar.gz
 
 before_script:
