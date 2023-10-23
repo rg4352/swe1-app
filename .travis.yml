@@ -16,4 +16,4 @@ script:
   - flake8 . --max-line-length=100
   - coverage run manage.py test
   - coverage xml
-  - ./coverall/coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
+  - coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
