@@ -5,8 +5,8 @@ python:
   - 3.9
 install:
   - pip install -r requirements.txt
-  - pip install urllib3==1.26.7
-  - curl -L https://coveralls.io/coveralls-linux.tar.gz
+  - mkdir ./coveragePackage
+  - curl -L https://coveralls.io/coveralls-linux.tar.gz | tar -xz -C ./coveragePackage
 
 before_script:
   - python manage.py migrate
@@ -17,4 +17,4 @@ script:
   - flake8 . --max-line-length=100
   - coverage run manage.py test
   - coverage xml
-  - coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
+  - ./coveragePackage/coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
