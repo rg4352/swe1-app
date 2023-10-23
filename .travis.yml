@@ -2,7 +2,7 @@ language: python
 
 # Specify the Python version you want to use
 python:
-  - 3.9
+  - 3.8
 install:
   - pip install -r requirements.txt
 
