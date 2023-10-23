@@ -14,7 +14,7 @@ before_script:
 
 script:
   - black --check .
-  - flake8 . --ignore= F821 --max-line-length=100
+  - flake8 . --ignore=F821 --max-line-length=100
   - coverage run manage.py test
   - coverage xml
   - ./coveragePackage/coveralls report --repo-token=$COVERALLTOKEN ./coverage.xml
