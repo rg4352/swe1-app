@@ -28,4 +28,4 @@ script:
     region: "us-west-2"
     app: "django-tutorial"
     env: "django-env"
-    bucket_name: "the-target-S3-bucket"
+    bucket_name: "$bucket"
