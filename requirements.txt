@@ -1,7 +1,7 @@
 asgiref==3.7.2
 Django==2.1
 sqlparse==0.4.4
-black == 19.10b0
+black 
 flake8
 coverage
 coveralls
